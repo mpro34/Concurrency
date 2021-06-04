@@ -1,2 +1,2 @@
-# Concurrency
-Scratchpad for concurrency in c++
+# Email Server
+Built and email server that handles requests concurrently.
