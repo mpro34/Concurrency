@@ -37,14 +37,12 @@ public:
     std::vector<std::string> BreakIntoSubstrings(std::string s, char mark)
     {
         std::vector<std::string> result;
-        int start = 0;
         for (int i = 0; i < (int)s.size(); i++)
         {
             if (s[i] == mark)
             {
                 result.push_back(s.substr(0, i));
                 s.erase(0, i+1);
-                start = i+1;
             }
         }
         result.push_back(s);
